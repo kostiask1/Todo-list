@@ -90,17 +90,17 @@ export const TodoListState = ({ children }) => {
     <TodoListContext.Provider
       value={{
         store,
-        show,
-        filt,
-        clear,
         items,
+        getItems,
+        setItems,
+        show,
+        addItem,
+        filter,
+        remove,
+        clear,
+        filt,
         filler,
         select,
-        remove,
-        filter,
-        addItem,
-        setItems,
-        getItems,
       }}
     >
       {children}
